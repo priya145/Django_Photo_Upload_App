@@ -1,0 +1,36 @@
+
+{% extends "user/base.html" %}
+{% load static %}
+{% block body %}
+
+  
+
+    <form class="form-signin">
+  <h1>Photo Upload App</h1>
+  <br>
+  
+  
+  <h5>Want to sign in?</h5>
+  
+  <a href="{% url "login" %}"><button type="button" class="btn btn-secondary">Sign in</button></a>
+  <h6>OR</h6>
+  
+  <hr style="height:2px;border-width:30;color:blue;background-color:gray">
+  <h5>don't have an account?</h5>
+  
+
+<a href="{% url "signup" %}"><button type ="button" class="btn btn-secondary" >Sign Up</button></a>
+
+
+</form>
+
+{% endblock %}
+
+
+
+
+
+
+
+    
+

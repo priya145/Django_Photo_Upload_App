@@ -1,0 +1,39 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+{% block body %}
+  
+
+
+
+
+
+  
+<div id="fh5co-main">
+			<div class="fh5co-narrow-content">
+				<h1 ><strong>Photo Gallery:</strong></h1>
+
+
+				{% for entry in Photos %}
+        
+            <div class="media-body" >
+            
+            <strong>{{ entry.uploaded_at}}</strong>
+            <br>
+            <a href="{{ entry.document.url }}">{{ entry.document.name }}</a>
+            <br>
+            <img src="{{MEDIA_URL}}{{ entry.document }}" />
+
+
+            
+            
+          </div>
+      
+      <br>
+
+{% endfor %}
+			</div>
+			
+			</div>
+			
+		
+{% endblock %}
